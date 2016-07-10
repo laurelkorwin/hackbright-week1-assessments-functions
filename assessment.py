@@ -128,13 +128,16 @@ def increment(x=1):
 # 2. Call the function ``increment()`` with x = 5. Assign what is returned to a variable name, addfive. Call
 #    addfive with y = 5. Call again with y = 20.
 
+print increment(5)
+#When you just do it this way, it's like...WTF, you gave me a function and x but no y.
+#OK, I'll print that this is basically function add and it's memory location...but I'm not doing ish until you give me a y value.
 addfive = increment(5)
+#Now you're saying - addfive is the function add, with x value 5.
 
 print addfive(5)
 print addfive(20)
+#NOW you're saying ok, I'll give you addfive, and make y = 5 or 20 or whatever you want.
 
-# print addfive(5)
-# print addfive(20)
 
 # 3. Make a function that takes in a number and a list of numbers. It should append
 #    the number to the list of numbers and return the list.
